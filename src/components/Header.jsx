@@ -1,13 +1,14 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { toggleVisibility } from "../utils/appSlice";
+import Search from './Search';
 
 const Header = function () {
+
    const dispatch = useDispatch();
    function toggleSideBar() {
       dispatch(toggleVisibility("data"),);
    }
-
    return (
       <nav className="flex justify-between items-center px-4 py-2">
          <div className='flex items-center'>
@@ -21,12 +22,9 @@ const Header = function () {
                src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png"
                alt='header' />
          </div>
-         <div>
-            <input
-               className="border border-gray-300 rounded-l-full px-2 w-72 "
-               type="text"
-               placeholder="Search" />
-            <button className='border border-gray-300 px-3 rounded-r-full'> 🔍 </button>
+
+         <div className='flex'>
+            <Search />
             <button className='rounded-full bg-grey px-1 ml-4 border border-gray-400'>🎙</button>
          </div>
          <div className='flex'>
