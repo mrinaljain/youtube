@@ -9,25 +9,32 @@ const Header = function () {
    }
 
    return (
-      <nav className="flex flex-row justify-between">
-         <div className='flex'>
+      <nav className="flex justify-between items-center px-4 py-2">
+         <div className='flex items-center'>
             <img
-               className='h-8'
+               className='h-6 cursor-pointer'
                onClick={toggleSideBar}
                src="https://cdn0.iconfinder.com/data/icons/rounded-basics/24/rounded__menu-512.png" />
             <img
-               className='h-10'
-               src="https://w7.pngwing.com/pngs/24/227/png-transparent-youtube-logo-youtube-text-trademark-logo.png" />
+               className='h-6 cursor-pointer ml-4'
+               src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png" />
          </div>
          <div>
             <input
-               className="border border-gray-300"
+               className="border border-gray-300 rounded-l-full px-2 w-72 "
                type="text"
-               placeholder="search" />
-            <button className='border border-gray-300 px-3'> SEARCH</button>
+               placeholder="Search" />
+            <button className='border border-gray-300 px-3 rounded-r-full'> 🔍 </button>
+            <button className='rounded-full bg-grey px-1 ml-4 border border-gray-400'>🎙</button>
          </div>
-         <div>
-            <span>Profile</span>
+         <div className='flex'>
+            <button className=''>🎙</button>
+            <button className='ml-8'>🔔</button>
+            <img
+               className='rounded-full h-7 ml-8'
+               src='https://yt3.ggpht.com/BoFtT9SCYdYD7Gl-m-4LN3Ddy_cqadm0KsFPHgjAQUhcS0QqkJ0RAKygm2taf3urW_7JKPtBJA=s88-c-k-c0x00ffffff-no-rj' />
+
+
          </div>
       </nav>
    );
