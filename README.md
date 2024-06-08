@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+# Youtube clone using React & Redux
+
+# Header
+- Hamburger
+- Logo
+- Search
+- Profile
+
+# Home
+- Sidebar
+  - NavItems
+- Body
+  - Categories
+  - VideoContainer
+    - Video Cards
+
+# Footer
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
