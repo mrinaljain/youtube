@@ -3,6 +3,7 @@ import Watch from "./pages/Watch";
 import HomeLayout from "./components/HomeLayout";
 import Body from "./components/Body";
 
+
 export let routes = createBrowserRouter([
   {
     element: <HomeLayout />,
@@ -11,5 +12,4 @@ export let routes = createBrowserRouter([
       { path: "watch", element: <Watch /> },
     ],
   },
-  ,
 ]);

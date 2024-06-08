@@ -14,10 +14,12 @@ const Header = function () {
             <img
                className='h-6 cursor-pointer'
                onClick={toggleSideBar}
-               src="https://cdn0.iconfinder.com/data/icons/rounded-basics/24/rounded__menu-512.png" />
+               src="https://cdn0.iconfinder.com/data/icons/rounded-basics/24/rounded__menu-512.png"
+               alt='menu' />
             <img
                className='h-6 cursor-pointer ml-4'
-               src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png" />
+               src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png"
+               alt='header' />
          </div>
          <div>
             <input
@@ -32,7 +34,8 @@ const Header = function () {
             <button className='ml-8'>🔔</button>
             <img
                className='rounded-full h-7 ml-8'
-               src='https://yt3.ggpht.com/BoFtT9SCYdYD7Gl-m-4LN3Ddy_cqadm0KsFPHgjAQUhcS0QqkJ0RAKygm2taf3urW_7JKPtBJA=s88-c-k-c0x00ffffff-no-rj' />
+               src='https://yt3.ggpht.com/BoFtT9SCYdYD7Gl-m-4LN3Ddy_cqadm0KsFPHgjAQUhcS0QqkJ0RAKygm2taf3urW_7JKPtBJA=s88-c-k-c0x00ffffff-no-rj'
+               alt='profile' />
 
 
          </div>

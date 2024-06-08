@@ -21,7 +21,6 @@ function VideoContainer() {
    return (
       <div className='flex flex-wrap gap-4'>
          {popularVideos.map(video => <VideoCard key={video.id} video={video} />)}
-
       </div>
    )
 }

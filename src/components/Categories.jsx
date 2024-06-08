@@ -3,7 +3,7 @@ import categories from '../utils/moc_categories';
 
 function Categories() {
    return (
-      <div className='flex overflow-x-scroll'>
+      <div className='flex overflow-x-scroll py-5'>
          {categories.map(category => <CategoryItem key={category} name={category} />)}
       </div>
    )
