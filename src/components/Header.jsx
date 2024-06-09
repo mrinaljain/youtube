@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { toggleVisibility } from "../utils/appSlice";
 import Search from './Search';
+import { Link } from 'react-router-dom';
 
 const Header = function () {
 
@@ -17,10 +18,13 @@ const Header = function () {
                onClick={toggleSideBar}
                src="https://cdn0.iconfinder.com/data/icons/rounded-basics/24/rounded__menu-512.png"
                alt='menu' />
-            <img
-               className='h-6 cursor-pointer ml-4'
-               src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png"
-               alt='header' />
+            <Link to="/">
+               <img
+                  className='h-6 cursor-pointer ml-4'
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png"
+                  alt='header' />
+            </Link>
+
          </div>
 
          <div className='flex'>

@@ -64,8 +64,16 @@ function Search() {
             onBlur={handleBlur} />
          <button className='border border-gray-300 px-3 rounded-r-full'> 🔍 </button>
 
-         {suggestionBoxVisibility && searchSuggestions?.length > 0 && <div className='w-full h-auto bg-white border border-gray-200 absolute rounded-md'>
-            {searchSuggestions.map((item, index) => <Link to={`/results?search_query=${item}`} key={index} className='w-full block hover:bg-gray-200 py-1 px-2'> {item} </Link>)}
+         {suggestionBoxVisibility && searchSuggestions?.length > 0 &&
+            <div className='w-full h-auto bg-white border border-gray-200 absolute rounded-md'>
+               {searchSuggestions.map((item, index) => {
+                  return <Link
+                     to={`results?search_query=${item}`}
+                     key={index}
+                     className='w-full block hover:bg-gray-200 py-1 px-2'>
+                     {item}
+                  </Link>
+               })}
 
          </div>}
       </div>

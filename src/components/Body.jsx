@@ -2,9 +2,12 @@ import React from 'react'
 import Categories from './Categories';
 import VideoContainer from './VideoContainer';
 
+
 function Body() {
+
+
    return (
-      <div className='w-full'>
+      <div className=''>
          <Categories />
          <VideoContainer />
       </div>

@@ -7,11 +7,12 @@ const appSlice = createSlice({
    },
    reducers: {
       toggleVisibility: (state, action) => {
-         console.log("action Started");
-         console.log(action.payload);
          state.sideMenuVisible = !state.sideMenuVisible;
+      },
+      closeSidebar: (state) => {
+         state.sideMenuVisible = false;
       }
    }
 });
 export default appSlice.reducer;
-export const { toggleVisibility } = appSlice.actions;
+export const { toggleVisibility, closeSidebar } = appSlice.actions;

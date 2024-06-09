@@ -1,5 +1,14 @@
 # Youtube clone using React & Redux
 
+## Available Features
+- Popular Videos
+- Watch Video
+- Search
+- Live Chat
+- Comments
+
+
+## Architecture
 # Header
 - Hamburger
 - Logo
@@ -16,7 +25,7 @@
 
 # Footer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
