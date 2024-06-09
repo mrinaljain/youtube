@@ -7,7 +7,7 @@ function Body() {
 
 
    return (
-      <div className=''>
+      <div>
          <Categories />
          <VideoContainer />
       </div>

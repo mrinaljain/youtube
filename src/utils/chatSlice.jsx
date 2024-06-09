@@ -6,8 +6,9 @@ const chatSlice = createSlice({
    ],
    reducers: {
       addChatItem: (state, action) => {
-         // state = [...state, action.payload];
-         state.slice(1, 5);
+         if (state.length > 20) {
+            state.slice(1, 5);
+         }
          state.unshift(action.payload);
       }
    }

@@ -19,7 +19,7 @@ function VideoContainer() {
    }, [])
 
    return (
-      <div className='flex flex-wrap gap-4'>
+      <div className='flex flex-wrap gap-4 justify-center'>
          {popularVideos.map(video => <VideoCard key={video.id} video={video} />)}
       </div>
    )
