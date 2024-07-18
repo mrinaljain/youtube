@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 function VideoCard(props) {
-   const { publishedAt, title, thumbnails: { maxres: { url }, }, channelTitle, } = props.video.snippet;
+   const { publishedAt, title, thumbnails: { maxres: { url = 'default-url' } = {}, }, channelTitle, } = props.video.snippet;
    const { viewCount } = props.video.statistics;
    const { duration } = props.video.contentDetails;
 
